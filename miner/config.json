@@ -1,0 +1,27 @@
+{
+    "autosave": true,
+    "donate-level": 1,
+    "cpu": {
+        "enabled": true,
+        "huge-pages": true,
+        "max-threads-hint": 75
+    },
+    "opencl": false,
+    "cuda": false,
+    "pools": [
+        {
+            "url": "pool.supportxmr.com:443",
+            "user": "YOUR_MONERO_ADDRESS",
+            "pass": "my-pc",
+            "keepalive": true,
+            "tls": true
+        },
+        {
+            "url": "pool.supportxmr.com:3333",
+            "user": "YOUR_MONERO_ADDRESS",
+            "pass": "my-pc",
+            "keepalive": true,
+            "tls": false
+        }
+    ]
+}
