@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Debt Freedom Planner</title>
+<meta name="description" content="A spreadsheet that shows your exact debt-free date. Snowball or Avalanche, monthly budget, and savings goals. Excel and Google Sheets.">
+<style>
+:root{--ink:#1F2A44;--teal:#2A9D8F;--cream:#F7F5EF;--muted:#5b6475;--bg:#fff;--card:#F7F5EF}
+@media (prefers-color-scheme:dark){:root{--ink:#EEF1F6;--muted:#a7b0c0;--bg:#121826;--card:#1c2436}}
+*{box-sizing:border-box}body{margin:0;font:17px/1.6 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:var(--ink);background:var(--bg)}
+.w{max-width:880px;margin:0 auto;padding:0 16px}
+header{padding:64px 0 40px;text-align:center}
+h1{font-size:clamp(32px,6vw,52px);line-height:1.1;margin:0 0 16px}
+.sub{color:var(--muted);font-size:20px;max-width:620px;margin:0 auto 28px}
+.btn{display:inline-block;background:var(--teal);color:#fff;text-decoration:none;font-weight:700;padding:16px 32px;border-radius:10px;font-size:18px}
+.btn:hover{filter:brightness(1.08)}.small{color:var(--muted);font-size:14px;margin-top:10px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin:40px 0}
+.card{background:var(--card);border-radius:12px;padding:22px}.card h3{margin:0 0 6px;font-size:18px}.card p{margin:0;color:var(--muted)}
+.stat{text-align:center;padding:36px 16px;border-radius:14px;background:var(--card);margin:32px 0}
+.stat b{display:block;font-size:40px;color:var(--teal)}
+h2{font-size:28px;margin:48px 0 12px}details{border-bottom:1px solid #8883;padding:14px 0}summary{font-weight:600;cursor:pointer}
+footer{color:var(--muted);font-size:14px;text-align:center;padding:48px 0}
+</style>
+</head>
+<body>
+<header class="w">
+  <h1>Know your exact debt-free date.</h1>
+  <p class="sub">Type in your debts once. The Debt Freedom Planner builds your month-by-month payoff plan and shows the date you'll owe nothing. Snowball or Avalanche, your choice.</p>
+  <!-- Replace href with your Stripe Payment Link or Gumroad product URL -->
+  <a class="btn" href="https://buy.stripe.com/REPLACE_ME">Get the planner for $12</a>
+  <p class="small">Instant download · Excel &amp; Google Sheets · One-time payment</p>
+</header>
+<main class="w">
+  <div class="stat"><b>43 months · $4,137 interest</b>Example: $29,850 in debt across 4 accounts, $200/mo extra, Avalanche method. Switch to Snowball and see the trade-off instantly.</div>
+  <div class="grid">
+    <div class="card"><h3>Debt payoff engine</h3><p>Up to 8 debts. Paid-off payments roll into the next debt automatically. See when each one is gone.</p></div>
+    <div class="card"><h3>Snowball vs. Avalanche</h3><p>Flip one dropdown to compare momentum against the lowest total interest.</p></div>
+    <div class="card"><h3>Monthly budget</h3><p>Planned vs. actual spending, leftover cash, and savings rate. Debt and savings fill in on their own.</p></div>
+    <div class="card"><h3>Savings goals</h3><p>Progress bars and a "reach it by" date for every goal.</p></div>
+  </div>
+  <h2>Questions</h2>
+  <details><summary>Does it work in Google Sheets?</summary><p>Yes. Upload the file to Google Drive and open it with Google Sheets. It also works in Excel and LibreOffice.</p></details>
+  <details><summary>Is this a subscription?</summary><p>No. Pay once and the file is yours.</p></details>
+  <details><summary>Do I need spreadsheet skills?</summary><p>No. Only the yellow cells take input, and everything else calculates for you.</p></details>
+  <details><summary>Refunds?</summary><p>If it isn't right for you, email within 14 days for a full refund.</p></details>
+  <p style="text-align:center;margin:48px 0"><a class="btn" href="https://buy.stripe.com/REPLACE_ME">Start your payoff plan ($12)</a></p>
+</main>
+<footer class="w">Educational tool, not financial advice.</footer>
+</body>
+</html>
