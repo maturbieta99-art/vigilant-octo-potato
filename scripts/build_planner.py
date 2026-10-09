@@ -231,7 +231,13 @@ cell(g, "B15", "Totals", BB); cell(g, "C15", "=SUM(C7:C14)", BB, USD)
 cell(g, "D15", "=SUM(D7:D14)", BB, USD); cell(g, "E15", "=SUM(E7:E14)", BB, USD)
 cell(g, "F15", "=IFERROR(D15/C15,0)", BB, "0%")
 
-for ws in [s, b, d, g]:
+from openpyxl.worksheet.properties import PageSetupProperties
+for ws, area in [(s, "B2:B26"), (b, "B2:H26"), (d, "B2:J43"), (g, "B2:H15")]:
     ws.sheet_properties.tabColor = TEAL
+    ws.sheet_properties.pageSetUpPr = PageSetupProperties(fitToPage=True)
+    ws.print_area = area
+    ws.page_setup.orientation = "landscape"
+    ws.page_setup.fitToWidth, ws.page_setup.fitToHeight = 1, 0
+    ws.print_options.horizontalCentered = True
 wb.save("/home/user/vigilant-octo-potato/product/Debt-Freedom-Planner.xlsx")
 print("saved")
